@@ -1,0 +1,42 @@
+.clients__title {
+    margin-bottom: 50px;
+  
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+  }
+  
+  .clients__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: rgba(175, 177, 184, 1);
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  
+    transition: color var(--anim), border var(--anim), border-radius var(--anim);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-txt-cl);
+      border: 1px solid var(--accent-txt-cl);
+      border-radius: 4px;
+    }
+  }
+  
+  
+  .clients__icon {
+    fill: currentColor;
+  }
