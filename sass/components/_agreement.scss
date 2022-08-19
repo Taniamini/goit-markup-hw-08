@@ -5,9 +5,8 @@
   gap: 7px;
   margin-bottom: 30px;
 
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  @include fonts(14px, 24px, null);
+
   color: var(--txt-cl);
 }
 
@@ -29,9 +28,7 @@
 }
 
 .agreement__text {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  @include fonts(14px, 24px, null);
 
   color: var(--txt-cl);
   user-select: none;

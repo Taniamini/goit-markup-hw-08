@@ -1,6 +1,8 @@
 // utilits styles
 @import './utilits/variables';
 @import './utilits/visually-hidden';
+@import './utilits/placeholder';
+@import './utilits/mixin';
 
 // base styles
 @import './base/base';
@@ -18,11 +20,11 @@
 // layout styles
 @import './layout/header';
 @import './layout/nav';
-@import './layout/footer';
 @import './layout/hero';
 @import './layout/about';
 @import './layout/work';
 @import './layout/team';
 @import './layout/clients';
+@import './layout/footer';
 @import './layout/filter';
 @import './layout/project';

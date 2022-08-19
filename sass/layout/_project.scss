@@ -1,4 +1,10 @@
+.project__list {
+  @extend %reset-list;
+}
+
 .project__link {
+  @extend %reset-link;
+
   display: block;
 
   transition: box-shadow var(--anim);
@@ -51,16 +57,13 @@
 .project__title {
   margin-bottom: 4px;
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include fonts(18px, 36px, 700, 0.06em);
+
   color: var(--main-txt-cl);
 }
 
 .project__subtitle {
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
+  @include fonts(16px, 30px, null);
+
   color: var(--txt-cl);
 }
