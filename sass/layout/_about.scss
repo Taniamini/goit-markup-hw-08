@@ -1,16 +1,5 @@
 .about {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media screen and (min-width: 768) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  @media screen and (min-width: 1200) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  @include section;
 }
 
 .about__list {
@@ -23,6 +12,9 @@
   margin-bottom: 10px;
 
   @include fonts(14px, 16px, 700);
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 
   text-transform: uppercase;
   color: var(--main-txt-cl);
@@ -38,8 +30,19 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+
   background-color: #f5f4fa;
   border-radius: 4px;
 }
