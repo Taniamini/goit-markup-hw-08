@@ -10,6 +10,9 @@
 
   text-align: center;
   color: var(--main-txt-cl);
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @include fonts(20px, 30px, 700);
+  }
 }
 
 .form__group {
@@ -70,8 +73,11 @@
   border-radius: 4px;
   cursor: pointer;
   outline: none;
-
+  @include fonts(12px, 14px, null, 0.01em);
   transition: border-color var(--anim);
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @include fonts(14px, 16px, null, 0.01em);
+  }
 
   &:placeholder-shown {
     border-color: rgba(33, 33, 33, 0.2);

@@ -4,29 +4,36 @@
   text-align: center;
 
   background-color: #c4c4c4;
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 480px;
     height: 400px;
     padding: 118px 60px;
+    margin-right: auto;
+    margin-left: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/hero.jpg);
     background-size: 480px 400px;
     background-size: cover;
     background-position: center;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
     height: 400px;
     padding: 118px 204px;
+    margin-right: auto;
+    margin-left: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/hero.jpg);
     background-size: 768px 400px;
     background-size: cover;
     background-position: center;
   }
+
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/hero.jpg);
 }
