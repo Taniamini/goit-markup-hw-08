@@ -1,5 +1,5 @@
 .team {
-  @extend %section;
+  @include section;
 
   background-color: #f5f4fa;
 }
@@ -11,12 +11,23 @@
 
   text-align: center;
   color: var(--main-txt-cl);
+  @media screen and (max-width: 1199px) {
+    @include fonts(28px, 33px);
+  }
 }
 
 .team__list {
   @extend %reset-list;
+  @media screen and (min-width: 480px) {
+    --items: 1;
+  }
 
-  --items: 4;
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --items: 4;
+  }
 }
 
 .team__item {
@@ -27,10 +38,11 @@
 }
 
 .team__block {
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+  padding: 30px;
 }
 
 .team__title {

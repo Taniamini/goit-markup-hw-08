@@ -1,3 +1,8 @@
+.work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .work__section {
   padding-bottom: 94px;
 }
@@ -12,9 +17,11 @@
   color: var(--main-txt-cl);
 }
 
-.work__item {
+.work__list {
   @extend %reset-list;
+}
 
+.work__item {
   position: relative;
 }
 
@@ -22,6 +29,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);

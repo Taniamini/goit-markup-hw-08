@@ -1,8 +1,12 @@
 .clients {
-  @extend %section;
+  @include section;
 }
 
 .clients__title {
+  @media screen and (max-width: 1199px) {
+    @include fonts(28px, 33px);
+    margin-bottom: 30px;
+  }
   margin-bottom: 50px;
 
   @include fonts(36px, 42px, 700);
@@ -14,11 +18,17 @@
 
 .clients__list {
   @extend %reset-list;
+  @media screen and (min-width: 480px) {
+    --items: 2;
+  }
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    --items: 3;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 6;
+  }
 }
 
 .clients__link {
@@ -27,8 +37,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    height: 92px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+  }
+
   color: rgba(175, 177, 184, 1);
   border: 1px solid #afb1b8;
   border-radius: 4px;
