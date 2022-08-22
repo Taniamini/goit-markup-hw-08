@@ -47,40 +47,36 @@
 }
 
 .hero__title {
-  @media screen and (max-width: 1199px) {
-    @include fonts(26px, 42px);
-    max-width: 360px;
-  }
+  @include fonts(26px, 42px);
+  max-width: 360px;
+  text-align: center;
   margin-right: auto;
   margin-left: auto;
-  max-width: 696px;
   margin-bottom: 30px;
-
-  @include fonts(44px, 60px, 900, 0.06em);
-
-  // text-align: center;
   text-transform: uppercase;
   color: $secondColor;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    @include fonts(44px, 60px, 900, 0.06em);
+  }
 }
 
 .hero__btn {
-  @media screen and (max-width: 1199px) {
-    width: 200px;
-  }
-  width: 216px;
+  width: 200px;
   height: 50px;
-
   font-family: inherit;
   cursor: pointer;
-
   @include fonts(16px, 30px, 700, 0.06em);
-
   color: #ffffff;
-
   background-color: #2196f3;
   border: 0;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @media screen and (min-width: 1200px) {
+    width: 216px;
+  }
 
   transition: background-color $anim;
 

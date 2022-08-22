@@ -6,13 +6,11 @@
 
 .team__title-main {
   margin-bottom: 50px;
-
-  @include fonts(36px, 42px, 700);
-
+  @include fonts(28px, 33px);
   text-align: center;
   color: $mainColor;
-  @media screen and (max-width: 1199px) {
-    @include fonts(28px, 33px);
+  @media screen and (min-width: 1200px) {
+    @include fonts(36px, 42px, 700);
   }
 }
 
@@ -36,11 +34,12 @@
 }
 
 .team__block {
-  @media screen and (max-width: 1199px) {
-    padding-top: 30px;
-    padding-bottom: 24px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 30px;
   }
-  padding: 30px;
 }
 
 .team__title {

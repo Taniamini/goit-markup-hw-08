@@ -43,11 +43,12 @@
 }
 
 .footer-address {
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
-  margin-top: 20px;
+  margin-bottom: 60px;
   font-style: inherit;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 20px;
+  }
 }
 
 .footer-address__list {
@@ -142,12 +143,6 @@
 }
 
 .footer-form__form {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
@@ -161,10 +156,10 @@
 }
 
 .footer-form__input {
-  @media screen and (max-width: 1199px) {
-    width: 450px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
-  width: 358px;
+  width: 450px;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);

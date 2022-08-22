@@ -3,24 +3,21 @@
 }
 
 .clients__title {
-  @media screen and (max-width: 1199px) {
-    @include fonts(28px, 33px);
-    margin-bottom: 30px;
-  }
-  margin-bottom: 50px;
-
-  @include fonts(36px, 42px, 700);
-
+  @include fonts(28px, 33px);
+  margin-bottom: 30px;
   text-align: center;
-
   color: $mainColor;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    @include fonts(36px, 42px, 700);
+  }
 }
 
 .clients__list {
   @extend %reset-list;
-  @media screen and (min-width: 480px) {
-    --items: 2;
-  }
+
+  --items: 2;
 
   @media screen and (min-width: 768px) {
     --items: 3;
@@ -38,10 +35,8 @@
   align-items: center;
   justify-content: center;
 
-  @media screen and (min-width: 480px) {
-    width: 210px;
-    height: 92px;
-  }
+  width: 210px;
+  height: 92px;
 
   @media screen and (min-width: 768px) {
     width: 226px;

@@ -8,15 +8,15 @@
 }
 
 .header__list {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @extend %reset-list;
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
-  @extend %reset-list;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,11 +26,17 @@
 }
 
 .header__item {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    @include fonts(12px, 14px, 500, 0.02em);
+  @include fonts(12px, 14px, 500, 0.02em);
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(14px, 16px, 500, 0.02em);
   }
-  @include fonts(14px, 16px, 500, 0.02em);
   color: $thirdColor;
+}
+.header__item:not(:last-child) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
 
 .header__contacts {
@@ -39,9 +45,6 @@
   display: flex;
   align-items: center;
   transition: color $anim;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-bottom: 10px;
-  }
 
   &:hover,
   &:focus {
