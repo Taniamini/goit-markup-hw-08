@@ -57,7 +57,7 @@
           </li>
         </ul>
         <button class="menu-btn" type="button" data-menu-open>
-          <svg class="menu-icon" width="40" height="40">
+          <svg class="open-menu" width="40" height="40">
             <use href="./images/icons.svg#menu"></use>
           </svg>
         </button>
@@ -611,5 +611,45 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu-mobile" data-menu>
+      <div class="menu-container">
+        <button class="menu-btn" type="button" data-menu-close>
+          <svg class="close-menu" width="40" height="40">
+            <use href="./images/icons.svg#close-menu"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item">
+            <a href="index.html" class="mobile-link mobile-link--current">Студія</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="portfolio.html" class="mobile-link">Портфоліо</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="" class="mobile-link">Контакти</a>
+          </li>
+        </ul>
+        <div class="mobile-contacts">
+          <a class="mobile-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="mobile-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </div>
+        <ul class="mobile-socilas">
+          <li class="mobile-socilas__item">
+            <a href="" class="mobile-socilas__link">Instagram</a>
+          </li>
+          <li class="mobile-socilas__item">
+            <a href="" class="mobile-socilas__link">Twitter</a>
+          </li>
+          <li class="mobile-socilas__item">
+            <a href="" class="mobile-socilas__link">Facebook</a>
+          </li>
+          <li class="mobile-socilas__item">
+            <a href="" class="mobile-socilas__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
