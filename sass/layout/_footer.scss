@@ -29,17 +29,17 @@
 .footer__logo {
   @extend %reset-link;
 
-  font-family: var(--second-font);
+  font-family: $secondFont;
   @media screen and (max-width: 1199px) {
     @include fonts(24px, 28px);
   }
   @include fonts(26px, 31px, 700);
 
-  color: var(--second-cl);
+  color: $secondColor;
 }
 
 .footer__logo-accent {
-  color: var(--accent-txt-cl);
+  color: $accentColor;
 }
 
 .footer-address {
@@ -62,13 +62,13 @@
   @extend %reset-link;
   @include fonts(14px, 24px, null);
 
-  color: var(--second-cl);
+  color: $secondColor;
 
-  transition: color var(--anim);
+  transition: color $anim;
 
   &:hover,
   &:focus {
-    color: var(--accent-txt-cl);
+    color: $accentColor;
   }
 }
 
@@ -78,11 +78,11 @@
 
   color: rgba(255, 255, 255, 0.6);
 
-  transition: color var(--anim);
+  transition: color $anim;
 
   &:hover,
   &:focus {
-    color: var(--accent-txt-cl);
+    color: $accentColor;
   }
 }
 
@@ -95,7 +95,7 @@
   @include fonts(14px, 16px, 700);
 
   text-transform: uppercase;
-  color: var(--second-cl);
+  color: $secondColor;
 }
 
 .footer-social__list {
@@ -116,16 +116,16 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--second-cl);
+  color: $secondColor;
   background-color: rgba(255, 255, 255, 0.1);
   fill: currentColor;
 
-  transition: color var(--anim), background-color var(--anim);
+  transition: color $anim, background-color $anim;
 
   &:hover,
   &:focus {
-    color: var(--second-cl);
-    background-color: var(--accent-txt-cl);
+    color: $secondColor;
+    background-color: $accentColor;
   }
 }
 
@@ -135,7 +135,7 @@
   @include fonts(14px, 16px, 700);
 
   text-transform: uppercase;
-  color: var(--second-cl);
+  color: $secondColor;
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
@@ -186,12 +186,12 @@
   width: 200px;
   height: 50px;
 
-  background-color: var(--accent-txt-cl);
+  background-color: $accentColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
   @include fonts(16px, 30px, 700, 0.06em);
 
-  color: var(--second-cl);
+  color: $secondColor;
   cursor: pointer;
 }

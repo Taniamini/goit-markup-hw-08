@@ -17,12 +17,12 @@
   }
 
   text-transform: uppercase;
-  color: var(--main-txt-cl);
+  color: $mainColor;
 }
 
 .about__subtitle {
   @include fonts(14px, 24px, null);
-  color: var(--txt-cl);
+  color: $thirdColor;
 }
 
 .about__block {

@@ -13,7 +13,7 @@
 
   text-align: center;
 
-  color: var(--main-txt-cl);
+  color: $mainColor;
 }
 
 .clients__list {
@@ -57,12 +57,12 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition: color var(--anim), border var(--anim), border-radius var(--anim);
+  transition: color $anim, border $anim, border-radius $anim;
 
   &:hover,
   &:focus {
-    color: var(--accent-txt-cl);
-    border: 1px solid var(--accent-txt-cl);
+    color: $accentColor;
+    border: 1px solid $accentColor;
     border-radius: 4px;
   }
 }

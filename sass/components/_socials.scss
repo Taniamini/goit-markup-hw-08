@@ -17,14 +17,14 @@
   height: 44px;
   border-radius: 50%;
   color: rgba(175, 177, 184, 1);
-  background-color: var(--second-cl);
+  background-color: $secondColor;
 
-  transition: color var(--anim), background-color var(--anim);
+  transition: color $anim, background-color $anim;
 
   &:hover,
   &:focus {
-    color: var(--second-cl);
-    background-color: var(--accent-txt-cl);
+    color: $secondColor;
+    background-color: $accentColor;
   }
 }
 

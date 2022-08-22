@@ -1,4 +1,4 @@
-.menu-btnh {
+.menu-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -8,8 +8,6 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
-.menu-btn {
   width: 40px;
   height: 40px;
   padding: 0;
@@ -17,11 +15,11 @@
   border: none;
   cursor: pointer;
 
-  transition: color var(--anim);
+  transition: color $anim;
 
   &:hover,
   &:focus {
-    color: var(--accent-txt-cl);
+    color: $accentColor;
   }
   @media screen and (min-width: 768px) {
     display: none;
@@ -46,7 +44,7 @@
   opacity: 0;
   visibility: hidden;
 
-  transition: opacity var(--anim), visibility var(--anim);
+  transition: opacity $anim, visibility $anim;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -70,7 +68,7 @@
   padding: 48px 40px;
 
   transform: translateX(100%);
-  transition: transform var(--anim);
+  transition: transform $anim;
 
   .menu-mobile.is-open & {
     transform: translateX(0);
@@ -92,10 +90,10 @@
   @extend %reset-link;
   @include fonts(40px, 47px, 500, 0.02em);
 
-  color: var(--main-txt-cl);
+  color: $mainColor;
   &:hover,
   &:focus {
-    color: var(--accent-txt-cl);
+    color: $accentColor;
   }
 }
 
@@ -107,11 +105,11 @@
   margin-bottom: 32px;
   @extend %reset-link;
   @include fonts(34px, 40px, 500, 0.02em);
-  color: var(--accent-txt-cl);
+  color: $accentColor;
 }
 .mobile-contacts__link:last-child {
   @include fonts(24px, 28px, 500, 0.02em);
-  color: var(--txt-cl);
+  color: $thirdColor;
   margin-bottom: 0;
 }
 
@@ -131,5 +129,5 @@
   @extend %reset-link;
   @include fonts(18px, 22px, 500, 0.02em);
 
-  color: var(--accent-txt-cl);
+  color: $accentColor;
 }

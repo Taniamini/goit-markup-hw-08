@@ -9,7 +9,7 @@
   @include fonts(20px, 23px, 700);
 
   text-align: center;
-  color: var(--main-txt-cl);
+  color: $mainColor;
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     @include fonts(20px, 30px, 700);
   }
@@ -40,7 +40,7 @@
 
   @include fonts(12px, 14px, null, 0.01em);
 
-  color: var(--txt-cl);
+  color: $thirdColor;
 }
 
 .form__input {
@@ -52,7 +52,7 @@
   cursor: pointer;
   outline: none;
 
-  transition: border-color var(--anim);
+  transition: border-color $anim;
 
   &:placeholder-shown {
     border-color: rgba(33, 33, 33, 0.2);
@@ -60,7 +60,7 @@
 
   &:hover,
   &:focus {
-    border-color: var(--accent-txt-cl);
+    border-color: $accentColor;
   }
 }
 
@@ -74,7 +74,7 @@
   cursor: pointer;
   outline: none;
   @include fonts(12px, 14px, null, 0.01em);
-  transition: border-color var(--anim);
+  transition: border-color $anim;
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     @include fonts(14px, 16px, null, 0.01em);
   }
@@ -85,7 +85,7 @@
 
   &:hover,
   &:focus {
-    border-color: var(--accent-txt-cl);
+    border-color: $accentColor;
   }
 }
 
@@ -94,15 +94,15 @@
   bottom: 11px;
   left: 12px;
 
-  transition: fill var(--anim);
+  transition: fill $anim;
 
   &:placeholder-shown {
-    fill: var(--main-txt-cl);
+    fill: $mainColor;
   }
 
   .form__input:hover + &,
   .form__input:focus + & {
-    fill: var(--accent-txt-cl);
+    fill: $accentColor;
   }
 }
 
@@ -111,14 +111,14 @@
 
   @include fonts(16px, 30px, 700, 0.06em);
 
-  color: var(--second-cl);
-  background-color: var(--accent-txt-cl);
+  color: $secondColor;
+  background-color: $accentColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
   cursor: pointer;
 
-  transition: background-color var(--anim);
+  transition: background-color $anim;
 
   &:hover,
   &:focus {

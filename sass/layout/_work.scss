@@ -14,7 +14,7 @@
 
   text-align: center;
 
-  color: var(--main-txt-cl);
+  color: $mainColor;
 }
 
 .work__list {
@@ -44,5 +44,5 @@
   text-align: center;
 
   text-transform: uppercase;
-  color: var(--second-cl);
+  color: $secondColor;
 }

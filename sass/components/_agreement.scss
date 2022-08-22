@@ -7,20 +7,20 @@
 
   @include fonts(14px, 24px, null);
 
-  color: var(--txt-cl);
+  color: $thirdColor;
 }
 
 .agreement__icon--uncheck {
   .agreement__checkbox:checked + .agreement__icon & {
     opacity: 0;
-    transition: opacity var(--anim);
+    transition: opacity $anim;
   }
 }
 
 .agreement__icon--check {
   opacity: 0;
-  fill: var(--accent-txt-cl);
-  transition: opacity var(--anim);
+  fill: $thirdColor;
+  transition: opacity $anim;
 
   .agreement__checkbox:checked + .agreement__icon & {
     opacity: 1;
@@ -30,7 +30,7 @@
 .agreement__text {
   @include fonts(14px, 24px, null);
 
-  color: var(--txt-cl);
+  color: $thirdColor;
   user-select: none;
   text-underline-position: under;
   @media screen and (min-width: 480px) and (max-width: 1199px) {
@@ -39,5 +39,5 @@
 }
 
 .agreement__link {
-  color: var(--accent-txt-cl);
+  color: $accentColor;
 }

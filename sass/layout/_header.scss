@@ -30,7 +30,7 @@
     @include fonts(12px, 14px, 500, 0.02em);
   }
   @include fonts(14px, 16px, 500, 0.02em);
-  color: var(--txt-cl);
+  color: $thirdColor;
 }
 
 .header__contacts {
@@ -38,14 +38,14 @@
 
   display: flex;
   align-items: center;
-  transition: color var(--anim);
+  transition: color $anim;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 10px;
   }
 
   &:hover,
   &:focus {
-    color: var(--accent-txt-cl);
+    color: $accentColor;
   }
 }
 
@@ -58,6 +58,6 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-txt-cl);
+    color: $accentColor;
   }
 }
