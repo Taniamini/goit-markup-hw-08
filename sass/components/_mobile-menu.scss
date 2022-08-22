@@ -61,6 +61,8 @@
   display: flex;
   flex-direction: column;
   z-index: 100;
+  width: 100%;
+  height: 100%;
   background-color: $secondColor;
   padding: 48px 40px;
   transform: translateX(100%);
@@ -74,7 +76,7 @@
 
 .mobile-nav {
   @extend %reset-list;
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .mobile-contacts {

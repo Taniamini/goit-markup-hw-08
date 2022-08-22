@@ -45,11 +45,10 @@
 
 .footer-address {
   margin-top: 20px;
-  margin-bottom: 60px;
   font-style: inherit;
 
-  @media screen and (min-width: 1200px) {
-    margin-top: 20px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
   }
 }
 
@@ -90,7 +89,9 @@
 }
 
 .footer-social {
-  margin-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 .footer-social__title {
   margin-bottom: 20px;
